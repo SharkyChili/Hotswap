@@ -1,6 +1,6 @@
-package com;
+package com.classloader;
 
-import com.classloader.MyClassLoader;
+
 import org.apache.commons.io.monitor.FileAlterationMonitor;
 import org.apache.commons.io.monitor.FileAlterationObserver;
 
@@ -69,7 +69,7 @@ public class Application {
 
     public static void start0(MyClassLoader classLoader) throws Exception {
 
-        Class<?> aClass = classLoader.loadClass("com.Application");
+        Class<?> aClass = classLoader.loadClass("com.classloader.Application");
 
         aClass.getMethod("start").invoke(aClass.newInstance());
 

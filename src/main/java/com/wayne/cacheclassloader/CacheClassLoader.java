@@ -7,6 +7,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
+ * 热替换
+ *
  * 让缓存永远返回一个class对象，这样就不会走父类加载器
  * 实现方法：在构造方法里加载类
  */

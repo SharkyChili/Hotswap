@@ -1,14 +1,14 @@
 package com.classloader;
 
-import com.Application;
-import com.Test;
-
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * 热部署
+ */
 public class MyClassLoader extends ClassLoader {
 
     //目的 让缓存里面永远能返回一个Class对象 这样就不需要走父类加载器了

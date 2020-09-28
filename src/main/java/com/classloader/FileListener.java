@@ -1,6 +1,5 @@
-package com;
+package com.classloader;
 
-import com.classloader.MyClassLoader;
 import org.apache.commons.io.monitor.FileAlterationListenerAdaptor;
 
 import java.io.File;
