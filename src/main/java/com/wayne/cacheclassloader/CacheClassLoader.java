@@ -1,4 +1,4 @@
-package com.cacheclassloader;
+package com.wayne.cacheclassloader;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -79,8 +79,8 @@ public class CacheClassLoader extends ClassLoader {
         rootPath = new File(rootPath).getPath();
 
         while(true){
-            CacheClassLoader cacheClassLoader = new CacheClassLoader(rootPath, rootPath + "/com/cacheclassloader");
-            Class<?> aClass = cacheClassLoader.loadClass("com.cacheclassloader.CacheTest");
+            CacheClassLoader cacheClassLoader = new CacheClassLoader(rootPath, rootPath + "/com/wayne/cacheclassloader");
+            Class<?> aClass = cacheClassLoader.loadClass("com.wayne.cacheclassloader.CacheTest");
             aClass.getMethod("test").invoke(aClass.newInstance());
 
             Thread.sleep(2000);
